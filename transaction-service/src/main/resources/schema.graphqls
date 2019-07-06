@@ -1,0 +1,15 @@
+type Query {
+  transactions(number: Int): [Transaction]
+}
+
+type Transaction {
+  number: Int!
+  total: Float!
+  user: User!
+}
+
+type User {
+  id: ID!
+  email: String
+  name: String
+}

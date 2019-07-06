@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: user-service
+  server:
+    port: 3000

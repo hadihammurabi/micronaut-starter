@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: transaction.service
+---
+testFramework: junit
+sourceLanguage: java

@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: transaction-service
+  server:
+    port: 3001
+
+graphql:
+  enabled: true
+  path: /transactions/graphql
+  graphiql:
+    enabled: true
+    path: /transactions/graphiql
+    template-path: classpath:graphiql/index.html
+    page-title: Transaction Service
