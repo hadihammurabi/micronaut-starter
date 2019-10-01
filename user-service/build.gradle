@@ -5,7 +5,6 @@ plugins {
     id "net.ltgt.apt-idea" version "0.21"
     id "com.github.johnrengelman.shadow" version "4.0.2"
     id "application"
-    id 'org.jetbrains.kotlin.jvm' version '1.3.41'
 }
 
 
@@ -46,7 +45,6 @@ dependencies {
     // implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
     implementation 'com.google.code.gson:gson:2.8.5'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
 test.classpath += configurations.developmentOnly
@@ -67,13 +65,3 @@ shadowJar {
 
 run.classpath += configurations.developmentOnly
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1', '-Dcom.sun.management.jmxremote')
-compileKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
-compileTestKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
